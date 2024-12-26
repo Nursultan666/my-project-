@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - BMW</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="models.html">Модели</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <h1>Контакты</h1>
+        
+        <p>Свяжитесь с нами для получения дополнительной информации о наших автомобилях, услугах или по любым вопросам:</p>
+
+        <div class="contact-info">
+            <h2>Наши контактные данные:</h2>
+            <ul>
+                <li><strong>Адрес:</strong> ул. Примерная, 123, Мюнхен, Германия</li>
+                <li><strong>Телефон:</strong> +49 123 456 789</li>
+                <li><strong>Электронная почта:</strong> <a href="mailto:info@bmw.com">info@bmw.com</a></li>
+            </ul>
+        </div>
+
+        <h2>Форма обратной связи:</h2>
+        <p>Заполните форму, и наш менеджер свяжется с вами в ближайшее время.</p>
+
+        <form action="send_message.php" method="POST">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Ваш email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Отправить сообщение</button>
+        </form>
+
+        <h2>Найти нас:</h2>
+        <div id="map">
+            <!-- Можно вставить карту, например, Google Maps -->
+            <iframe src="https://www.google.com/maps/embed?pb=..."></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 BMW. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>
